@@ -13,8 +13,8 @@ java2classというChrome拡張をベースに作られています。
 
 ScreenShots
 ----
-![Java source](https://github.com/shoito/java2yuml/raw/master/img/1280x800_0.png)
-![JavaDoc](https://github.com/shoito/java2yuml/raw/master/img/1280x800_1.png)
+![Java source](https://github.com/shoito/java2yuml-chrome-extension/raw/master/images/1280x800_0.png)
+![JavaDoc](https://github.com/shoito/java2yuml-chrome-extension/raw/master/images/1280x800_1.png)
 
 Language
 ----
@@ -28,7 +28,7 @@ Repository
 
 How to install Chrome Extensions
 ----
- 1. Install from [Chrome Web Store]() 
+ 1. Install from [Chrome Web Store](https://chrome.google.com/webstore/detail/java2yuml/glhmljgoioemnbaaijkpbiggmjkogbkb) 
  1. Access to Source code repository.
 
 Source code repository examples
