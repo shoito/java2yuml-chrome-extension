@@ -1,0 +1,8 @@
+{
+   "extDescription": {
+        "message": "java2yuml is a Chrome Extensions for Java source code and JavaDoc visualization using yUML"
+    },
+   "extName": {
+      "message": "java2yuml"
+   }
+}

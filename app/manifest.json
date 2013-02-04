@@ -1,0 +1,45 @@
+{
+  "manifest_version": 2,
+  "default_locale": "en",
+  "browser_action": {
+    "default_icon": "images/icon48.png",
+    "default_title": "__MSG_extName__"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*.html", "https://*/*.html"],
+      "js": ["scripts/javadoc.js"]
+    },
+    {
+      "matches": ["http://code.google.com/*.java*", "https://code.google.com/*.java*"],
+      "js": ["scripts/src.js"]
+    },
+    {
+      "matches": ["http://github.com/*/blob/*.java*", "https://github.com/*/blob/*.java*"],
+      "js": ["scripts/src.js"]
+    },
+    {
+      "matches": ["http://bitbucket.org/*/src/*.java*", "https://bitbucket.org/*/src/*.java*"],
+      "js": ["scripts/src.js"]
+    }
+  ],
+  "icons": {
+    "48": "images/icon48.png",
+    "128": "images/icon128.png" 
+  },
+  "background": {
+    "scripts": [
+      "scripts/background.js"
+    ]
+  },
+  "options_page": "options.html",
+  "description": "__MSG_extDescription__",
+  "name": "__MSG_extName__",
+  "permissions": [
+    "tabs", 
+    "http://*/*", 
+    "https://*/*" 
+  ],
+  "version": "0.1.0"
+}
+

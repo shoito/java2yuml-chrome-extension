@@ -1,0 +1,8 @@
+{
+   "extDescription": {
+        "message": "Chromeで閲覧しているJavaDocやソースコード(Java)を解析して、どんなフィールドやメソッドから構成されているのかをyUML形式で把握できるChrome拡張です。"
+    },
+   "extName": {
+      "message": "java2yuml"
+   }
+}
