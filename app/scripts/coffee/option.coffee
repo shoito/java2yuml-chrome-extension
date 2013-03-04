@@ -1,5 +1,5 @@
 class Options
-  saveOptions: ->
+  saveOptions: =>
     @saveToLocalStorage()
     status = document.getElementById("status")
     status.innerHTML = "Options Saved."
@@ -7,13 +7,13 @@ class Options
       status.innerHTML = ""
     ), 750
 
-  saveToLocalStorage: ->
+  saveToLocalStorage: =>
     localStorage["showPublic"] = document.getElementById("public").checked + ""
     localStorage["showProtected"] = document.getElementById("protected").checked + ""
     localStorage["showNone"] = document.getElementById("none").checked + ""
     localStorage["showPrivate"] = document.getElementById("private").checked + ""
 
-  restoreOptions: ->
+  restoreOptions: =>
     showPublic = localStorage["showPublic"]
     showProtected = localStorage["showProtected"]
     showNone = localStorage["showNone"]
