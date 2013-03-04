@@ -1,9 +1,17 @@
 (function() {
-  var Options;
+  var Options,
+    __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
   Options = (function() {
 
-    function Options() {}
+    function Options() {
+      this.restoreOptions = __bind(this.restoreOptions, this);
+
+      this.saveToLocalStorage = __bind(this.saveToLocalStorage, this);
+
+      this.saveOptions = __bind(this.saveOptions, this);
+
+    }
 
     Options.prototype.saveOptions = function() {
       var status;
